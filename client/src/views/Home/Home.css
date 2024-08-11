@@ -1,0 +1,185 @@
+/* Color Scheme */
+:root {
+    --primary-color: #3498db; /* Blue */
+    --primary-dark: #2980b9; /* Dark Blue */
+    --secondary-color: #2ecc71; /* Green */
+    --background-color: #ecf0f1; /* Light Gray */
+    --text-color: #2c3e50; /* Dark Gray */
+    --error-color: #ff1900; /* Red */
+    --box-shadow-color: rgba(0, 0, 0, 0.2); /* Soft Shadow */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin-top: 1px;
+    padding: 0;
+}
+
+
+/* Greeting Section */
+.greeting {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    margin: 10px 0;
+    color: #4facfe;
+
+}
+
+.home-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    margin: 10px 0;
+}
+
+.home-greeting {
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 30px 0;
+    color: #4facfe;
+}
+
+/* Name Styling */
+.name-1 {
+    font-weight: 600;
+    color: var(--text-color);
+        color: #4facfe;
+
+}
+
+/* Logout Button */
+.home-logout {
+    position: fixed;
+    top: 18px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color:#ff1900;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: 0 0 5px var(--box-shadow-color);
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home-logout:hover {
+    background-color: darkred;
+    color: white;
+}
+
+/* Transactions Value */
+.transactions-value {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+/* Items Styling */
+.items {
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 0 10px var(--box-shadow-color);
+    border: 3px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: white;
+}
+
+.amount-title, .amount-value {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.amount-value {
+    font-weight: 700;
+}
+
+/* Students Container */
+.students-container {
+    max-height: 700px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+/* Add Student Button */
+.add-student {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    background-color: white;
+    filter: drop-shadow(0 0 5px var(--box-shadow-color));
+    transition: background-color 0.3s;
+}
+
+.add-student:hover {
+    background-color: var(--primary-color);
+}
+
+/* Button Container */
+.btn-container {
+    position: relative;
+}
+
+/* Home Button */
+.home-button {
+    position: absolute;
+    top: 160px;
+    right: 20px;
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.home-button:hover {
+    background-color: var(--primary-dark);
+    box-shadow: 0 0 10px var(--box-shadow-color);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .greeting, .home-heading, .home-greeting, .amount-title, .amount-value {
+        font-size: 1.5rem;
+    }
+    
+    .home-logout {
+        font-size: 1.2rem;
+        padding: 6px 15px;
+    }
+
+    .items {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .add-student {
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+    }
+    
+    .home-button {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+        right: 10px;
+    }
+}
