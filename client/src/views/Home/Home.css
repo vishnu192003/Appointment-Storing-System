@@ -1,5 +1,57 @@
 /* Color Scheme */
+:root {
+    --primary-color: #3498db; /* Blue */
+    --primary-dark: #2980b9; /* Dark Blue */
+    --secondary-color: #2ecc71; /* Green */
+    --background-color: #ecf0f1; /* Light Gray */
+    --text-color: #2c3e50; /* Dark Gray */
+    --error-color: #ff1900; /* Red */
+    --box-shadow-color: rgba(0, 0, 0, 0.2); /* Soft Shadow */
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin-top: 1px;
+    padding: 0;
+}
+
+
+/* Greeting Section */
+.greeting {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    margin: 10px 0;
+    color: #4facfe;
+
+}
+
+.home-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    margin: 10px 0;
+}
+
+.home-greeting {
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 30px 0;
+    color: #4facfe;
+}
+
+/* Name Styling */
+.name-1 {
+    font-weight: 600;
+    color: var(--text-color);
+        color: #4facfe;
+
+}
 
 /* Logout Button */
 .home-logout {
