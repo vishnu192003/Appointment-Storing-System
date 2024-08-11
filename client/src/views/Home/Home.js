@@ -47,7 +47,7 @@ function Home() {
   return (
     <div>
       <div className='home-div'>
-      <h1 className='home-greeting'>Hello👋<span className='name-1'></span></h1>
+      <h1 className='home-greeting'>👨🏻‍⚕️Hello!<span className='name-1'></span></h1>
       <h2 className='greeting'>Welcome to Seva Hospital⚕️ </h2>
       <h2 className='home-heading'>Your Added Patient Information Are Below👇🏻</h2>
         <Link to='/add-student'>
