@@ -15,7 +15,7 @@ function Login() {
       password: password
     })
     if(response.data.success){
-      toast.success("Login Successful!!")
+      toast.success("Login Successful!!🔓")
 
       // add user data to local storage for future use
       localStorage.setItem("currentUser", JSON.stringify(response.data.data))
@@ -34,7 +34,7 @@ function Login() {
 
   return (
     <div>
-      <h1 className='heading'>Login Now🔒</h1>
+      <h1 className='heading'>Login Now🔐</h1>
 
       <form action="" className='auth-form'>
        <input type="email"
