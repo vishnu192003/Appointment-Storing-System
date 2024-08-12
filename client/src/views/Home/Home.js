@@ -29,20 +29,22 @@ function Home() {
 
 
     const response = await axios.get(`${process.env.REACT_APP_API_URL}/students?userId=${user._id}`)
-    toast.loading('Loading Students Details...')
+    // toast.loading('Loading Patient Details...')
 
     const allStudents = response.data.data
 
 
     setStudents(allStudents)
-    toast.dismiss()
+    // toast.dismiss()
     
   }
 
   
   useEffect(() => {
-    loadStudents(setStudents)
-  }, [user])
+
+    loadStudents()
+
+  },)
 
   return (
     <div>
