@@ -41,7 +41,7 @@ function Home() {
 
   
   useEffect(() => {
-    loadStudents()
+    loadStudents(setStudents)
   }, [user])
 
   return (
